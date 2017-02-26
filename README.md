@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: The idea of naked twin problem solving algorithm is to identify 2 boxes in a unit with exactly one pair of common possible numbers, when we find such boxes we can therefore remove any of the number pair from the boxes peers. so by applying this constrain recursively we solve the problem (or make it easier).
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: We apply a constraint to ensure that a number between 1-9 only appears only once in any given row, column or in a square unit, to solve diagonal sudoku problem we just have to apply the constrain to 2 diagonal units. By imply adding 2 new units (diagonal) to the "unit_list" constraint propagation happens automatically (as programmed ;))
 
 ### Install
 
@@ -29,10 +29,3 @@ If not, please see how to download pygame [here](http://www.pygame.org/download.
 * `PySudoku.py` - Do not modify this. This is code for visualizing your solution.
 * `visualize.py` - Do not modify this. This is code for visualizing your solution.
 
-### Visualizing
-
-To visualize your solution, please only assign values to the values_dict using the ```assign_values``` function provided in solution.py
-
-### Data
-
-The data consists of a text file of diagonal sudokus for you to solve.
